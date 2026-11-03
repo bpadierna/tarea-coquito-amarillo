@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coquito Amarillo S.A.S. — Registro de Pedidos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main class="contenedor-formulario">
+    <h1>Registro de Pedidos</h1>
+    <form id="formPedido">
+      <label for="nombreCliente">Nombre del cliente</label>
+      <input type="text" id="nombreCliente" name="nombreCliente" required>
+ 
+      <label for="producto">Producto</label>
+      <input type="text" id="producto" name="producto" required>
+ 
+      <label for="cantidad">Cantidad</label>
+      <input type="number" id="cantidad" name="cantidad" min="1" required>
+ 
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" required>
+ 
+      <button type="submit">Registrar pedido</button>
+    </form>
+    <p id="mensaje"></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
